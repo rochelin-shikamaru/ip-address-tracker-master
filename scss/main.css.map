@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,mFAAI;AGAZ,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EFID,OAAO,EAAE,UAAU;CEHhC",
+    "sources": [
+        "main.scss",
+        "Utils/_variables.scss",
+        "Utils/_mixins.scss",
+        "Base/_reset.scss",
+        "Layout/_mediaQuery.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
