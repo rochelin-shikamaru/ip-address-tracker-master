@@ -6,28 +6,63 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./scss/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+  integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+  crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
   
   <title>Frontend Mentor | IP Address Tracker</title>
 
 </head>
 <body>
-<div>
-  your are welcome
-</div>
-  <!-- IP Address Tracker
+<header>
+  <h2>IP Address Tracker</h2>
+  <form >
+    <div class="search">
+      <input class="search__input" type="text" placeholder="Search for any IP address or domain" >
+      <div class="search__svg" onclick="handleSearch()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+      </div>
+    </div>
+  </form>
+</header>
+<main>
+  <section class="information">
+    <div class="information__position">
+      <aside class="information__ip">
+        <div class="information__position__div--border1">
+          <span>IP Address</span>
+          <p>1</p>
+        </div>
+      </aside>
+      <aside class="information__location">
+        <div class="information__position__div--border2">
+          <span>Location</span>
+          <p>2</p>
+        </div>
+      </aside>
+      <aside class="information__timezone">
+        <div class="information__position__div--border3">
+          <span>Timezone</span>
+          <p>3</p>
+        </div>
+      </aside>
+      <aside class="information__isp">
+        <div class="information__position__div--border14">
+          <span>ISP</span>
+          <p>4</p>
+        </div>
+      </aside>  
+    </div>
+  </section>
+  <div id="map">
 
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC < add offset value dynamically using the API 
-  ISP
+  </div>
+</main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="./script/index.js"></script>
 </body>
 </html>

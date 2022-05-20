@@ -1,0 +1,31 @@
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 490px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+//mobile and tablet
+
+@media screen and (max-width: 768px) {
+    .information{
+        &__position{
+            flex-direction: column;
+            div{
+                width: 100%;
+                text-align: center;
+                p{
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+    
+}
+
